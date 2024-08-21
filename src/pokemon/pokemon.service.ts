@@ -23,8 +23,11 @@ export class PokemonService {
     }
   }
 
-  findAll() {
-    return `This action returns all pokemon`;
+  async findAll(limit: number = 10, offset: number) {
+    return await this.pokemonModel.find()
+            .limit(limit)
+            .skip( limit * offset )
+            .select('-__v');
   }
 
   async findOne(term: string) {
