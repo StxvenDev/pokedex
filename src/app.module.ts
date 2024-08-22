@@ -18,7 +18,8 @@ import { SeedModule } from './seed/seed.module';
 
     CommonModule,
 
-    SeedModule
+    SeedModule,
+
   ],
 })
 export class AppModule {}
