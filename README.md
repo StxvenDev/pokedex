@@ -22,10 +22,25 @@
   docker-compose up -d
 ```
 
-5. Reconstruir la base de datos
+#### Configuracion de las variables de entorno
+5. Clonar el archivo __.template.env__ y renombrar la copia a __.development.env__
+
+6. Setear las variables de entorno definidas en el archivo __.development.env__
+
+---
+
+#### Ejecutar la aplicacion
+
+7. Ejecutar este comando en la raiz del proyecto
+```
+npm run start:dev
+```
+
+8. Reconstruir la base de datos
 ```
   http://localhost:3000/api/v2/pokemon/:pokeid
 ```
+
 
 ### Stack Usado
 
