@@ -43,6 +43,7 @@ lerna-debug.log*
 .env.production.local
 .env.local
 .development.env
+.prod.env
 
 # temp directory
 .temp
